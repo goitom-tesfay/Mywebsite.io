@@ -356,3 +356,10 @@ form button:hover {
     padding: 30px 20px;
   }
 }
+.text {
+  font-size: 20dp;
+  padding: 70px;
+  padding-top: 250px;
+  text-align: center;
+  color: white;
+  }
