@@ -1,0 +1,20 @@
+body {
+  background: gray;
+}
+ol {
+      list-style-position: inside;
+      margin-left: 0;
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      margin: 0;
+    }

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>signup</title>
+        <link rel="stylesheet" href="signup_style.css" />
+    </head>
+    <body>
+        <h2 class="h1">Create Account</h2>
+        <div class="form-box-signup">
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="products.html">
+                  <p id="errorMessage" class="errorMessage"></p>
+                    <div class="input-email">
+                        <label for="email" class="email-label">email</label>
+                        <input id="email" type="email" required />
+                    </div>
+                    <div class="input-password">
+                        <label for="password" class="password-label">password</label>
+                        <input id="password" type="password" required />
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy" />
+                        <label for="policy">
+                            I agree the
+                            <a href="conditions.html" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button id="submit-button" type="button" onclick="validateCheckbox()">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account?
+                    <a href="login.html" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+        
+        <script  src="./script.js"></script>
+        
+    </body>
+</html>
