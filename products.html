@@ -6,6 +6,11 @@
   </head>
   <body>
     <h3 class="h3">products</h3>
+    <div id="cart-summary">
+      <p>Total Quantity: <span id="total-quantity">0</span></p>
+      <p>Total Price: <span id="total-price">ETB 0</span></p>
+      <button id="go-to-payment" onclick="goToPayment()">Go to Payment</button>
+    </div>
     <div class="subdiv1">
       <div class="div1">
         <img class="shoe" src="shoe1.jpg">
@@ -118,5 +123,8 @@
         <button id="shoe16">add to cart</button>
       </div>
     </div>
+    
+    <script  src="./productsScript.js"></script>
+    
   </body>
 </html>

@@ -2,6 +2,16 @@
 .h3 {
   text-align: center;
 }
+#cart-summary {
+  text-align: right;
+  font-style: bold;
+  padding: 10px;
+}
+#go-to-payment {
+  background: green;
+  color: white;
+  border-radius: 10px;
+}
 .shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9, .shoe10, .shoe11, .shoe12, .shoe13, .shoe14, .shoe15, .shoe16 {
   height: 150px;
   width: 150px;
