@@ -1,28 +1,25 @@
 let totalQuantity = 0;
-  let totalPrice = 0;
+let totalPrice = 0;
 
-  function addToCart(shoeId, price) {
-    totalQuantity++;
-    totalPrice += price;
-    updateCartSummary();
-  }
+function addToCart(buttonId, price) {
+  const addButton = document.getElementById(buttonId);
 
-  function updateCartSummary() {
-    document.getElementById("total-quantity").textContent = totalQuantity;
-    document.getElementById("total-price").textContent = "ETB " + totalPrice;
-  }
+  // Increment quantity and update total price
+  totalQuantity++;
+  totalPrice += price;
 
-  function goToPayment() {
-    // Redirect to the payment page (replace 'payment.html' with your actual payment page)
-    window.location.href = 'payment.html';
-  }
+  // Update cart summary
+  document.getElementById('total-quantity').textContent = totalQuantity;
+  document.getElementById('total-price').textContent = `ETB ${totalPrice}`;
 
-  // Attach click event listeners to the "add to cart" buttons
-  const addToCartButtons = document.querySelectorAll('button[id^="shoe"]');
-  addToCartButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const shoeId = this.id;
-      const price = parseInt(document.querySelector(`#${shoeId}`).previousElementSibling.textContent.trim().split(' ')[1]);
-      addToCart(shoeId, price);
-    });
-  });
+  // Disable the button after adding to cart
+  addButton.disabled = true;
+}
+
+function goToPayment() {
+  // Set values in URL parameters
+  const paymentUrl = `payment.html?totalQuantity=${totalQuantity}&totalPrice=${totalPrice}`;
+  
+  // Redirect to payment page
+  window.location.href = paymentUrl;
+}

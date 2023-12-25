@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="payment-style.css">
+</head>
+<body>
+  <div class="order">
+  <h3>Your Order Details</h3>
+  <p>Quantity: <span id="quantity"></span></p>
+  <p>Total Price: <span id="total-price"></span></p>
+
+  <h3>Enter Your Information</h3>
+  <form id="payment-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <button id="button" type="button" onclick="contact()">Contact</button>
+  </form>
+  </div>
+  <script src="payment-script.js"></script>
+</body>
+</html>

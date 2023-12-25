@@ -1,52 +1,146 @@
-
+body {
+    background-image: url("/background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: center;
+}
 .h3 {
-  text-align: center;
+    text-align: center;
 }
 #cart-summary {
-  text-align: right;
-  font-style: bold;
-  padding: 10px;
+    text-align: right;
+    font-style: bold;
+    padding: 10px;
 }
 #go-to-payment {
-  background: green;
-  color: white;
-  border-radius: 10px;
+    background: green;
+    color: white;
+    border-radius: 10px;
 }
-.shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9, .shoe10, .shoe11, .shoe12, .shoe13, .shoe14, .shoe15, .shoe16 {
-  height: 150px;
-  width: 150px;
-  border-radius: 20px;
+.shoe,
+.shoe1,
+.shoe2,
+.shoe3,
+.shoe4,
+.shoe5,
+.shoe6,
+.shoe7,
+.shoe8,
+.shoe9,
+.shoe10,
+.shoe11,
+.shoe12,
+.shoe13,
+.shoe14,
+.shoe15,
+.shoe16 {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    align-items: center;
 }
-.price1, .price2, .price3, .price4, .price5, .price6, .price7, .price8, .price9, .price10, .price11, .price12, .price13, .price14, .price15, .price16 {
-  color: green;
+.price1,
+.price2,
+.price3,
+.price4,
+.price5,
+.price6,
+.price7,
+.price8,
+.price9,
+.price10,
+.price11,
+.price12,
+.price13,
+.price14,
+.price15,
+.price16 {
+    color: green;
+    margin: 0px;
+    padding: 0px;
 }
+/*.products {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-basis: 160px;
+}*/
 .subdiv1, .subdiv2, .subdiv3, .subdiv4, .subdiv5, .subdiv6, .subdiv7, .subdiv8 {
+  flex-wrap: wrap;
   display: flex;
   margin: 10px 10px 10px 10px;
 }
 .subdiv1, .subdiv2 img {
   margin: 10px;
 }
-.div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10, .div11, .div12, .div13, .div14, .div15, .div16 {
-  width: 160px;
-  height: 300px;
-  background: transparent;
-    border: 2px solid rgba(255, 255, 255, .5);
+@media screen and (min-width: 769px) {
+.div2, .div6, .div10, .div14 {
+  margin-right: 25px;
+}
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8,
+.div9,
+.div10,
+.div11,
+.div12,
+.div13,
+.div14,
+.div15,
+.div16 {
+    width: 160px;
+    height: 320px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
+    flex-basis: 150px;
 }
-.div1, .div3, .div5, .div7, .div9, .div11, .div13, .div15 {
-  margin-right: 20px;
+.div1,
+.div3,
+.div5,
+.div7,
+.div9,
+.div11,
+.div13,
+.div15 {
+    margin-right: 20px;
 }
-#shoe1, #shoe2, #shoe3, #shoe4, #shoe5, #shoe6, #shoe7, #shoe8, #shoe9, #shoe10,#shoe11,#shoe12, #shoe13, #shoe14, #shoe15, #shoe16 {
-  border-radius: 10px;
-  color: white;
-  background: #2879E3;
-  padding: 7px;
+#shoe1,
+#shoe2,
+#shoe3,
+#shoe4,
+#shoe5,
+#shoe6,
+#shoe7,
+#shoe8,
+#shoe9,
+#shoe10,
+#shoe11,
+#shoe12,
+#shoe13,
+#shoe14,
+#shoe15,
+#shoe16 {
+    border-radius: 10px;
+    color: white;
+    background: #2879e3;
+    padding: 7px;
+    margin-top: 5px;
 }
